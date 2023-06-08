@@ -2,11 +2,11 @@ import React from "react";
 import "../css/note.css";
 import { Checkbox } from "@material-ui/core";
 
-function Note() {
+function Note(props) {
   return (
     <div className="note">
       <Checkbox />
-      <h3>Hello!</h3>
+      <h3>{props.msg}</h3>
     </div>
   );
 }
